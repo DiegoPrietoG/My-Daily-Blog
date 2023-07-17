@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyDailyBlog</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--
+    Se utiliza para poder agrupar links, imagines o logo de la página. Podemos crear
+    todas etiquetas header que queramos. Sin embarago, deben seguir las siguientes dos
+    reglas:
+    -No utilizar una etiqueta header dentro de otra etiqueta header.
+    -No podemos colocar una eiqueta header dentro de una etiqueta footer.
+    -->
+    <header>
+        <h1 id="maintitle">MY DAILY BLOG</h1>
+    </header>
+    <div id="menu">
+        <nav class="menu-fixed">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="web/acercade.html">Acerca de</a>
+                </li>
+                <li>
+                    <a href="web/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--Sirve para definir secciones de nuestro blog-->
+    <section class="container">
+        <a class="linkpost" href="web/post1.html">
+            <article class="post">
+                <h2>¡Primer Post!</h2>
+                <p>Este es mi primer post en mi blog😈</p>
+                <img src="assets/4.png" width="300"/>
+                <p>
+                    Aquí le presento una foto de mi cara para que se vayan
+                    familiarizando con mi cara de puerco.
+                </p>
+                <br>
+            </article>
+        </a>
+        <article class="post">
+            <h2>Ya me quedé sin ideas</h2>
+            <p>Me estoy quedando sin ideas, ¡Ayuda!</p>
+            <img src="assets/1200px-Alone-513525_640.png" width="300"/>
+            <p>
+                Cada vez me está costando más y más sacar nuevos posts,
+                es una tarea muy ardua.
+            </p>
+            <br>
+        </article>
+        <article class="post">
+            <h2>Dejo el blog</h2>
+            <p>Hasta aquí llegamos.</p>
+            <img src="assets/depositphotos_382965602-stock-ph.png" width="300"/>
+            <p>
+                Después de pensarlo y reflexionar durante muchos meses y he
+                decidido dejar para siempre el blog. Hasta nunca lectores 💔.
+            </p>
+            <br>
+        </article>
+    </section>
+    <!--Sule contener información de contacto, copyright, etc-->
+    <footer>
+        <section id="up">
+            <!--Podemos crear un enlace que nos lleve a un id, no una clase.-->
+            <a href="#maintitle">Ir al comienzo</a>
+        </section>
+        <section id="infomation">
+            <label>Información</label>
+            <br><br>
+            <label>Correo:</label>
+            <a style="color: rgb(113, 206, 243)" target="_blank" href="mailto:digo@gmail.com">diego@gmail.com</a>
+            <p>copyright 2023</p>
+        </section>
+    </footer>
+    
+</body>
+</html>

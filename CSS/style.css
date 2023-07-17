@@ -1,0 +1,114 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #204e6d;
+    color: white;
+    /*rem se adapta a el tamaño de la etiqueta, en este caso de header.*/
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    margin: 20px 20px 0px 20px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+ul {
+    overflow: hidden;
+    background-color: #204e6d;
+    margin-top: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: #0e334b;
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    width: 100%;
+    max-width: 2000px;
+}
+
+/*Esto hace que el contenido se centre, ya sea section, article, etc. 
+  Centrando section hace que todos los post se centren automáticamente.*/
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.linkpost {
+    text-decoration: none;
+    color: black;
+}
+
+.post {
+    text-align: center;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    padding: 12px 50px;
+}
+
+.post img {
+    border-radius: 5px;
+}
+/*EVENTO*/
+section article:hover {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 1rem 0.4rem rgba(0,0,0,30%);
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: #204e6d;
+    padding: 1rem;
+    color: white;
+}
+
+#up {
+    float: right;
+}
+
+#up a{
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#up a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+
+#information {
+    float: left;
+}
